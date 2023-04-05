@@ -3,28 +3,32 @@
 ## Índice de contenidos
 
 - [Globals](#globals)
-  - [Modulos del core](#core_module)
+  - [File system](#file_system)
 
 ## Basico
 
 <a name="globals"></a>
 
-### Que son los Globals?
+### ¿Qué son los Globals?
 
-    Son modulos que ya vienen con nodeJS que podemos utilizar sin necesidad de importar nada, como por ejemplo;
+Son módulos que ya vienen con nodeJS que podemos utilizar sin necesidad de importar nada, como por ejemplo;
 
-    - process
-    - require()
-    - module y module.exports
-    - console y console.log()
-    - setTimeout() y setInterval()
-    - **dirname y **filename
+- process
+- require()
+- module y module.exports
+- console y console.log()
+- setTimeout() y setInterval()
+- **dirname y **filename
 
-    Jamas usar variables globales ya que es un foco de problemas en nodeJs
+Jamás usar variables globales, ya que es un foco de problemas en nodeJs
+
+<a name="file_system"></a>
+
+### File System (sistema de archivos)
 
 ### Notas
 
-    - Jamas usar variables globales ya que es un foco de problemas en nodeJs
+- Jamas usar variables globales ya que es un foco de problemas en nodeJs
 
 ## Licencia
 

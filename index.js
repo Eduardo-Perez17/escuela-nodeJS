@@ -1,0 +1,2 @@
+// GLOBALS
+console.log(global);

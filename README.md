@@ -2,12 +2,14 @@
 
 ## Índice de contenidos
 
+### Básico
+
 - Entender los módulos del core
   - [Globals](#globals)
   - [File system](#file_system)
 - [Notas](#notas)
 
-## Basico
+### Comenzamos
 
 <a name="globals"></a>
 

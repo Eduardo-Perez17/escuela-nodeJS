@@ -2,7 +2,8 @@
 
 ## Índice de contenidos
 
-- [Globals](#globals)
+- [Entender los módulos del core]
+  - [Globals](#globals)
   - [File system](#file_system)
 
 ## Basico

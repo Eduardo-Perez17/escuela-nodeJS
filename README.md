@@ -75,7 +75,7 @@ Con console podemos imprimir todo tipo de valores por nuestra terminal.
 - console.countReset(): reinicia el contador a 0.
 - console.clear(): Limpia la consola.
 
-<a name="#try_catch"></a>
+<a name="try_catch"></a>
 
 ### Try y Catch
 
@@ -83,6 +83,14 @@ Con Node podemos manejar los errores de una manera muy optima.
 
 - try: se ejecuta el código.
 - catch: se manipula el error.
+
+```
+try {
+  // código...
+} catch(err) {
+  // manipulación de error
+}
+```
 
 <a name="notas"></a>
 

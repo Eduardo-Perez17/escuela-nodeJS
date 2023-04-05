@@ -7,6 +7,7 @@
 - Entender los módulos del core
   - [Globals](#globals)
   - [File system](#file_system)
+  - [Console](#console)
 - [Notas](#notas)
 
 ### Comenzamos
@@ -24,7 +25,7 @@ Son módulos que ya vienen con nodeJS que podemos utilizar sin necesidad de impo
 - setTimeout() y setInterval()
 - **dirname y **filename
 
-Jamás usar variables globales, ya que es un foco de problemas en nodeJs
+Jamás usar variables globales, ya que es un foco de problemas en nodeJs.
 
 <a name="file_system"></a>
 
@@ -32,7 +33,7 @@ Jamás usar variables globales, ya que es un foco de problemas en nodeJs
 
 Nos permite leer, modificar, crear, cambiar, etc. Los archivos de nuestro sistema.
 
-Todo lo que vayamos a hacer en el file system se va a ejecutar de forma asíncrona, no es para nada recomendable usar métodos síncronos
+Todo lo que vayamos a hacer en el file system se va a ejecutar de forma asíncrona, no es para nada recomendable usar métodos síncronos.
 
 Funciones básicas de File System;
 
@@ -53,6 +54,25 @@ const leerArchivo = (ruta, callback) => {
 
 leerArchivo(__dirname + '/archivo.txt', console.log)
 ```
+
+<a name="console"></a>
+
+### Console
+
+Con console podemos imprimir todo tipo de valores por nuestra terminal.
+
+- console.log(): recibe cualquier tipo y lo muestra en el consola.
+- console.info(): es equivalente a log pero es usado para informar.
+- console.error(): es equivalente a log pero es usado para errores.
+- console.warn(): es equivalente a log pero es usado para warning.
+- console.table: muestra una tabla a partir de un objeto.
+- console.group(): permite agrupar errores mediante identación.
+- console.groupEnd(): finaliza la agrupación.
+- console.time(): inicia un cronometro en ms.
+- console.timeEnd(): Finaliza el cronometro.
+- console.count(): inicia un contador autoincremental.
+- console.countReset(): reinicia el contador a 0.
+- console.clear(): Limpia la consola.
 
 <a name="notas"></a>
 

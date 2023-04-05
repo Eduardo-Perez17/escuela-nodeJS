@@ -26,11 +26,11 @@ Jamás usar variables globales, ya que es un foco de problemas en nodeJs
 
 ### File System (sistema de archivos)
 
-Nos permite leer, modificar, crear, cambiar, etc los archivos de nuestro sistema.
+Nos permite leer, modificar, crear, cambiar, etc. Los archivos de nuestro sistema.
 
-Todo lo que vayamos a hacer en el file system se va a ejectutar de forma asincrona, no es para nada recomendable usar metodos sincronos
+Todo lo que vayamos a hacer en el file system se va a ejecutar de forma asíncrona, no es para nada recomendable usar métodos síncronos
 
-Funciones basicas de File System;
+Funciones básicas de File System;
 
 - Leer archivo: readFile(ruta, callback)
 - Modificar archivo: writeFile(ruta, contenido, callback)
@@ -53,6 +53,7 @@ leerArchivo(__dirname + '/archivo.txt', console.log)
 ### Notas
 
 - Jamás usar variables globales, ya que es un foco de problemas en nodeJs
+- Las funciones y métodos del File System tienen una versión síncrona, no es recomendada usar, pues podría bloquear el event loop con más facilidad
 
 ## Licencia
 

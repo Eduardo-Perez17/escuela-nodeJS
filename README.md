@@ -2,9 +2,10 @@
 
 ## Índice de contenidos
 
-- [Entender los módulos del core]
+- Entender los módulos del core
   - [Globals](#globals)
   - [File system](#file_system)
+- [Notas](#notas)
 
 ## Basico
 
@@ -50,6 +51,8 @@ const leerArchivo = (ruta, callback) => {
 
 leerArchivo(__dirname + '/archivo.txt', console.log)
 ```
+
+<a name="notas"></a>
 
 ### Notas
 

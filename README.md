@@ -8,6 +8,7 @@
   - [Globals](#globals)
   - [File system](#file_system)
   - [Console](#console)
+  - [Try y Catch](#try_catch)
 - [Notas](#notas)
 
 ### Comenzamos
@@ -74,12 +75,22 @@ Con console podemos imprimir todo tipo de valores por nuestra terminal.
 - console.countReset(): reinicia el contador a 0.
 - console.clear(): Limpia la consola.
 
+<a name="#try_catch"></a>
+
+### Try y Catch
+
+Con Node podemos manejar los errores de una manera muy optima.
+
+- try: se ejecuta el código.
+- catch: se manipula el error.
+
 <a name="notas"></a>
 
 ### Notas
 
 - Jamás usar variables globales, ya que es un foco de problemas en nodeJs
 - Las funciones y métodos del File System tienen una versión síncrona, no es recomendada usar, pues podría bloquear el event loop con más facilidad
+- Cuando se genera un error, node propaga el error hacia arriba, hasta que esta es caputado. si el error no se captura node se detiene. Siempre que sea posible debemos capturar todos los errores que se puedan generar en nuestros hilos.
 
 ## Licencia
 

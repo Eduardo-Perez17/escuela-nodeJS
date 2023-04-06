@@ -110,7 +110,7 @@ El módulo de procesos secundarios de Node.js (chil_process) tiene 2 funciones s
 
 ### Http
 
-El modulo HTTP nos permite crear un servidor HTTP o conectarnos con un servidor exterior directamente con nodeJS
+El módulo HTTP nos permite crear un servidor HTTP o conectarnos con un servidor exterior directamente con nodeJS
 
 ```
 const { createServer } = require('http');

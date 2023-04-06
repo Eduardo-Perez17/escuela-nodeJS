@@ -3,23 +3,23 @@ const { createServer } = require('http');
 const port = 3000;
 
 const router = (req, res) => {
-  res.writeHead(201, { 'Content-Type': 'text/plain' });
+  res.writeHead(201, { 'Content-Type': 'text/html; charset=utf-8' });
 
   switch (req.url) {
     case '/':
-      res.write('Esta es mi ruta PRINCIPAL HTTP con node');
+      res.write('<h1>Esta es mi ruta PRINCIPAL HTTP con node</h1>');
       res.end();
       break;
     case '/segunda':
-      res.write('Esta es mi ruta SECUNDARIA HTTP con node');
+      res.write('<h2>Esta es mi ruta SECUNDARIA HTTP con node</h2>');
       res.end();
       break;
     case '/tercero':
-      res.write('Esta es mi TERCERA ruta HTTP con node');
+      res.write('<h2>Esta es mi TERCERA ruta HTTP con node</h2>');
       res.end();
       break;
     default:
-      res.write('Lolamento, no hemos encontrado esta ruta');
+      res.write('<h3>Lolamento, no hemos encontrado esta ruta</h3>');
       res.end();
   }
 };

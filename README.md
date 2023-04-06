@@ -10,6 +10,7 @@
   - [Console](#console)
   - [Try y Catch](#try_catch)
   - [Procesos Hijos](#procesos_hijos)
+  - [http](#http)
 - [Notas](#notas)
 
 ### Comenzamos
@@ -107,11 +108,52 @@ El módulo de procesos secundarios de Node.js (chil_process) tiene 2 funciones s
 
 <a name="notas"></a>
 
+### Http
+
+El modulo HTTP nos permite crear un servidor HTTP o conectarnos con un servidor exterior directamente con nodeJS
+
+```
+const { createServer } = require('http');
+
+const port = 3000;
+
+const route = (req, res) => {
+  res.writeHead(201, { 'Content-Type': 'text-plain' });
+
+  switch (req.url) {
+    case '/':
+      res.write('Esta es la ruta principal de mi servidor HTTP');
+      res.end();
+      break;
+    case '/segundo':
+      res.write('Esta es la segunda ruta de mi servidor HTTP');
+      res.end();
+      break;
+    default:
+      res.write('Esta ruta no se encuentra');
+      res.end();
+  }
+};
+
+const server = createServer(route);
+
+server.listen(port, err => {
+  if (err) {
+    console.info('Lolamento, hubo un error');
+    console.error(err.message);
+  }
+
+  console.info(`> servidor: http://localhost:${port}`);
+});
+```
+
+<a name="notas"></a>
+
 ### Notas
 
 - Jamás usar variables globales, ya que es un foco de problemas en nodeJs
 - Las funciones y métodos del File System tienen una versión síncrona, no es recomendada usar, pues podría bloquear el event loop con más facilidad
-- Cuando se genera un error, node propaga el error hacia arriba, hasta que esta es caputado. si el error no se captura node se detiene. Siempre que sea posible debemos capturar todos los errores que se puedan generar en nuestros hilos.
+- Cuando se genera un error, node propaga el error hacia arriba, hasta que esta es capturado. si el error no se captura node se detiene. Siempre que sea posible debemos capturar todos los errores que se puedan generar en nuestros hilos.
 - stdout, sterr son estándares de salida (stdout: los datos se presentaron correctamente sterr, hubo un error)
 
 ## Licencia

@@ -97,13 +97,13 @@ try {
 
 ### Procesos Hijos
 
-El modulo de procesos secundarios de Node.js (chil_process) tiene 2 funciones spawn y exec, mediante las cuales podemos iniciar procesos secundarios con un su propio hilo para ejecutar cualquier programa en el sistema.
+El módulo de procesos secundarios de Node.js (chil_process) tiene 2 funciones spawn y exec, mediante las cuales podemos iniciar procesos secundarios en su propio hilo para ejecutar cualquier programa en el sistema.
 
 - Usa spawn cuando quieres que el proceso hijo devuelva datos binarios enormes en node
-- Usa spawn cuando quieres recibir datos desde que el proceso arranca
+- Usa spawn cuando quieres recibir datos desde que el proceso arranca.
 
 - Usa exec cuando quieres que el proceso hijo devuelva mensajes de estado simples
-- Usa exec cuando solo quieres recibir datos al final de la ejecucion
+- Usa exec cuando solo quieres recibir datos al final de la ejecución.
 
 <a name="notas"></a>
 
@@ -112,7 +112,7 @@ El modulo de procesos secundarios de Node.js (chil_process) tiene 2 funciones sp
 - Jamás usar variables globales, ya que es un foco de problemas en nodeJs
 - Las funciones y métodos del File System tienen una versión síncrona, no es recomendada usar, pues podría bloquear el event loop con más facilidad
 - Cuando se genera un error, node propaga el error hacia arriba, hasta que esta es caputado. si el error no se captura node se detiene. Siempre que sea posible debemos capturar todos los errores que se puedan generar en nuestros hilos.
-- stdout, sterr son estandares de salida (stdout: los datos se presentaron correctamente sterr, hubo un error)
+- stdout, sterr son estándares de salida (stdout: los datos se presentaron correctamente sterr, hubo un error)
 
 ## Licencia
 
